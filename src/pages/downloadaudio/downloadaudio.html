@@ -1,0 +1,26 @@
+<!--
+  Generated template for the DownloadaudioPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>批量下载</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="rightbtn()">{{titleitem}}</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let item of chapters">
+      <h2>{{item.chapterTitle}}</h2>
+      <ion-checkbox end> </ion-checkbox>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -104,4 +104,9 @@ export class BookPage {
     this.app.getRootNavs()[0].push('AudioplayerPage', {bookitem:this.bookItem, chapters: this.chapters, item: item});
   }
 
+  downloads():void{
+    console.log("-------------downloads")
+    this.app.getRootNavs()[0].push('DownloadaudioPage', {data:this.bookItem, chapters:this.chapters})
+  }
+
 }
